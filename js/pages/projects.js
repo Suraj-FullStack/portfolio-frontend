@@ -2,6 +2,7 @@
  * projects.js – Renders the Projects page with filter bar.
  */
 import { escHtml, techTag, catEmoji, catLabel } from '../utils.js';
+import { API } from '../api.js';
 
 export async function renderProjects(el, summary, API) {
   let projects = summary.featured_projects || [];
@@ -106,9 +107,7 @@ function defaultCards() {
 window.showDetail = async (slug) => {
   // Simple modal-style detail view
   try {
-    const res = await fetch(`https://8000-iziksxf9lkmzu9jgvfuh2-ecea8f22.sandbox.novita.ai/api/v1/projects/${slug}/`);
-    if (!res.ok) return;
-    const p = await res.json();
+    const p = await API.getProjectBySlug(slug);
     const overlay = document.createElement('div');
     overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(8px);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;';
     overlay.innerHTML = `

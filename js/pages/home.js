@@ -55,7 +55,7 @@ export async function renderHome(el, summary) {
               <div class="stat-lbl">Certifications</div>
             </div>
             <div>
-              <div class="stat-num grad-text">2nd</div>
+              <div class="stat-num grad-text">Final</div>
               <div class="stat-lbl">Year ISMT</div>
             </div>
           </div>
@@ -260,7 +260,7 @@ function buildCertCards(certs) {
 
 function defaultCerts() {
   return [
-    { icon:'fas fa-graduation-cap', color:'#10b981', name:'Full Stack Python Django', issuer:'Mind Risers Institute of Technology', date:'May 2026' },
+    { icon:'fas fa-graduation-cap', color:'#10b981', name:'Full Stack Python Django', issuer:'Mind Risers Institute of Technology', date:'August 2026' },
     { icon:'fas fa-shield-alt',     color:'#ef4444', name:'Cyber Security Workshop',  issuer:'KMC Students Committee',           date:'Mar 2022' },
     { icon:'fas fa-search',         color:'#f59e0b', name:'5-Day SEO Challenge',       issuer:'ORKA SOCIALS',                     date:'Jun 2024' },
     { icon:'fas fa-child',          color:'#06b6d4', name:'Child Rights Toolkit',      issuer:'UNICEF',                           date:'2024' },
