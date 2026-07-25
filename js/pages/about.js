@@ -50,7 +50,7 @@ export async function renderAbout(el, summary) {
             <div class="info-icon"><i class="fab fa-github"></i></div>
             <div>
               <span class="info-label">GitHub</span>
-              <a class="info-val" href="${escHtml(about?.github_url || '#')}" target="_blank">https://github.com/Suraj-FullStack</a>
+              <a class="info-val" href="${escHtml(about?.github_url || '#')}" target="_blank">https://github.com/Suraj-FullStack/</a>
             </div>
           </div>
           <div class="info-row">
@@ -219,7 +219,7 @@ function bar(name, pct) {
 
 function buildCerts(certs) {
   const defaults = [
-    { icon:'fas fa-graduation-cap', badge_color:'#10b981', name:'Full Stack Python Django', issuer:'Mind Risers Institute of Technology', date_issued:'2026-07-31' },
+    { icon:'fas fa-graduation-cap', badge_color:'#10b981', name:'Full Stack Python Django', issuer:'Mind Risers Institute of Technology', date_issued:'2026-0-31' },
     { icon:'fas fa-shield-alt',     badge_color:'#ef4444', name:'Cyber Security Workshop',  issuer:'KMC Students Committee',           date_issued:'2022-03-05' },
     { icon:'fas fa-search',         badge_color:'#f59e0b', name:'5-Day SEO Challenge',       issuer:'ORKA SOCIALS',                     date_issued:'2024-06-15' },
     { icon:'fas fa-child',          badge_color:'#06b6d4', name:'Child Rights Toolkit',      issuer:'UNICEF',                           date_issued:'2024-01-01' },
