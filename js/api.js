@@ -4,7 +4,7 @@
  */
 
 // Use local Django backend URL
-const API_BASE = "https://suraj-kumar-shah-portfolio-website.onrender.com";
+const API_BASE = "https://suraj-kumar-shah-portfolio-website.onrender.com/api/v1";
 
 /**
  * Generic fetch wrapper – returns parsed JSON or throws on error.
