@@ -60,7 +60,7 @@ async function navigate(page) {
       <div class="container section text-center">
         <p style="font-size:3rem">⚠️</p>
         <h2 style="margin:16px 0">Something went wrong</h2>
-        <p class="text-muted">Could not load data from the API. Make sure the backend is running on port 8000.</p>
+        <p class="text-muted">Could not load data from the API. Please try again later.</p>
         <button class="btn btn-primary mt-2" onclick="navigate('home')">Go Home</button>
       </div>`;
   }
