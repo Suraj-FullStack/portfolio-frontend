@@ -40,9 +40,15 @@ export const API = {
    * POST contact form data.
    * @param {{ name,email,subject,message }} body
    */
-  sendContact: (body) =>
-    apiFetch('/contact/', {
+  sendContact: async (body) => {
+    console.log("Sending contact data:", body);
+
+    const response = await apiFetch('/contact/', {
       method: 'POST',
       body: JSON.stringify(body),
-    }),
+    });
+
+    console.log("Contact API response:", response);
+    return response;
+  },
 };

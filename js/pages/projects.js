@@ -40,7 +40,7 @@ export async function renderProjects(el, summary, API) {
 
     ${!projects.length ? `
       <div class="text-center" style="padding:60px 0;">
-        <p class="text-muted">No projects found. Add some via the <a href="http://localhost:8000/admin/" target="_blank">Admin Panel</a>.</p>
+       
       </div>` : ''}
   </div>
   `;
@@ -82,9 +82,10 @@ function renderCards(projects) {
 
 function defaultCards() {
   return [
+    {emoji:'💻', cat:'web',  title:'Elevate-workforce-job-portal', desc:'Elevate Workforce Solutions is a full-stack job portal for Nepal, connecting talented professionals with top companies.', stack:'Node.js, Express.js, PostgreSQL, HTML, Javascript, Tailwind CSS', featured:true },
     { emoji:'📸', cat:'web',      title:'Boundless Moments Photography', desc:'Responsive multi-page photography portfolio with SEO & accessibility.', stack:'HTML5, CSS3, JavaScript', featured:true },
     { emoji:'🏨', cat:'database', title:'Hotel Room Reservation System', desc:'Full-featured hotel management app for Hidden Paradise Hotel with PostgreSQL.', stack:'Python, Tkinter, PostgreSQL, PG8000', featured:true },
-    { emoji:'🌐', cat:'backend',  title:'Portfolio REST API + Frontend', desc:'Django REST API + Vanilla JS SPA with fully separated frontend/backend.', stack:'Django, DRF, Python, JavaScript, Bootstrap 5', featured:true },
+    { emoji:'🌐', cat:'backend',  title:'Portfolio REST API + Frontend', desc:'Django REST API + JS  with fully separated frontend/backend.', stack:'Django, DRF, Python, JavaScript, Bootstrap 5', featured:true },
   ].map(p => `
     <article class="project-card fade-in">
       <div class="project-thumb">

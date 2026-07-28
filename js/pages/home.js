@@ -30,7 +30,7 @@ export async function renderHome(el, summary) {
           </p>
 
           <p class="hero-bio fade-in">
-            ${escHtml(about?.bio || 'A passionate Computer System Engineering student at ISMT, Kathmandu, specialising in Python & Django backend development.')}
+            ${escHtml(about?.bio || 'A passionate Computer System Engineering student at ISMT, Kathmandu, specializing in Python & Django backend development.')}
           </p>
 
           <div class="hero-btns fade-in">
@@ -47,7 +47,7 @@ export async function renderHome(el, summary) {
 
           <div class="hero-stats fade-in">
             <div>
-              <div class="stat-num grad-text">2+</div>
+              <div class="stat-num grad-text">4+</div>
               <div class="stat-lbl">Projects</div>
             </div>
             <div>
@@ -66,9 +66,7 @@ export async function renderHome(el, summary) {
           <div class="avatar-orbit">
             <div class="avatar-ring">
               <div class="avatar-inner">
-                ${about?.profile_image
-                  ? `<img src="${about.profile_image}" alt="Suraj Kumar Shah">`
-                  : '👨‍💻'}
+                <img src="assets/images/suraj.jpeg" alt="Suraj Kumar Shah">  
               </div>
             </div>
             <div class="orbit-pill top-r">

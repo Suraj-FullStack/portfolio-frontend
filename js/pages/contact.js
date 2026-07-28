@@ -144,6 +144,7 @@ export async function renderContact(el, summary, API) {
   const fields = { name:'nameErr', email:'emailErr', subject:'subjectErr', message:'messageErr' };
 
   form.addEventListener('submit', async (e) => {
+    console.log("FORM SUBMIT EVENT FIRED");
     e.preventDefault();
     clearErrors();
 
@@ -171,6 +172,8 @@ export async function renderContact(el, summary, API) {
     submitBtn.innerHTML = '<span class="spinner" style="width:18px;height:18px;border-width:2px;margin:0 8px 0 0;animation:spin .6s linear infinite;"></span> Sending…';
 
     try {
+      console.log("DATA BEING SENT:", data);
+      console.log("API OBJECT:", API); 
       await API.sendContact(data);
       form.style.display = 'none';
       successDiv.style.display = 'block';

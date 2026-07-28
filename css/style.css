@@ -311,6 +311,8 @@ body::before {
 .avatar-inner {
   width:100%; height:100%; border-radius:50%;
   background: var(--clr-card);
+  object-fit: cover;
+  object-position: center top;
   display:flex; align-items:center; justify-content:center;
   font-size: 7rem; overflow: hidden;
 }

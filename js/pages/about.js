@@ -13,7 +13,7 @@ export async function renderAbout(el, summary) {
       <span class="section-label"><i class="fas fa-user"></i> Know Me</span>
       <h1 class="section-title fade-in">About <span class="grad-text">Me</span></h1>
       <div class="divider center"></div>
-      <p class="section-sub fade-in">CS Engineering student — backend developer — problem solver</p>
+      <p class="section-sub fade-in">CS Engineering student — Backend developer — Python Developer</p>
     </div>
   </div>
 
@@ -75,7 +75,7 @@ export async function renderAbout(el, summary) {
 
         <!-- Stats -->
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;">
-          ${[['2+','Projects Built'],['5+','Certificates'],['3','Languages'],['Final','Year @ ISMT']]
+          ${[['4+','Projects Built'],['5+','Certificates'],['3','Languages'],['Final','Year @ ISMT']]
             .map(([n,l]) => `
               <div class="card" style="padding:16px;text-align:center;">
                 <div class="stat-num grad-text" style="font-size:1.6rem;">${n}</div>
@@ -139,7 +139,7 @@ function buildEduTimeline(eduList) {
   const defaults = [
     { degree:'BSc (Hons) Computer System Engineering', institution:'ISMT, Kathmandu', duration:'2023 – Present', gpa:'', description:'Currently in Final Year.' },
     { degree:'Higher Secondary Education (+2)', institution:'Kathmandu Model Secondary School, Bagbazar', duration:'2021 – 2023', gpa:'3.44', description:'Science stream.' },
-    { degree:'SEE', institution:'Laligurans Academy, Sarlahi', duration:'2019 – 2021', gpa:'3.8', description:'Distinction graduate.' },
+    { degree:'SEE', institution:'Laligurans Academy, Sarlahi', duration:'2021', gpa:'3.8', description:'Distinction graduate.' },
   ];
   const list = eduList?.length ? eduList : defaults;
   return list.map(e => `
@@ -219,11 +219,11 @@ function bar(name, pct) {
 
 function buildCerts(certs) {
   const defaults = [
-    { icon:'fas fa-graduation-cap', badge_color:'#10b981', name:'Full Stack Python Django', issuer:'Mind Risers Institute of Technology', date_issued:'2026-0-31' },
+    { icon:'fas fa-graduation-cap', badge_color:'#10b981', name:'Full Stack Python Django', issuer:'Mind Risers Institute of Technology', date_issued:'2026-07-31' },
     { icon:'fas fa-shield-alt',     badge_color:'#ef4444', name:'Cyber Security Workshop',  issuer:'KMC Students Committee',           date_issued:'2022-03-05' },
     { icon:'fas fa-search',         badge_color:'#f59e0b', name:'5-Day SEO Challenge',       issuer:'ORKA SOCIALS',                     date_issued:'2024-06-15' },
     { icon:'fas fa-child',          badge_color:'#06b6d4', name:'Child Rights Toolkit',      issuer:'UNICEF',                           date_issued:'2024-01-01' },
-    { icon:'fas fa-comments',       badge_color:'#6366f1', name:'Building Communication',    issuer:'Kathmandu Model School',           date_issued:'2022-06-01' },
+    { icon:'fas fa-comments',       badge_color:'#6366f1', name:'Building Communication',    issuer:'Kathmandu Model Secondary School',           date_issued:'2022-06-01' },
   ];
   const list = certs?.length ? certs : defaults;
   return list.map(c => `
