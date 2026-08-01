@@ -63,7 +63,7 @@ export async function renderContact(el, summary, API) {
             <a href="${escHtml(about?.github_url || 'https://github.com/Suraj-FullStack')}" target="_blank" class="btn btn-ghost btn-sm">
               <i class="fab fa-github"></i> GitHub
             </a>
-            <a href="${escHtml(about?.linkedin_url || 'www.linkedin.com/in/suraj-kumar-shah-2904052b0')}" target="_blank" class="btn btn-ghost btn-sm">
+            <a href="${escHtml(about?.linkedin_url || 'https://www.linkedin.com/in/suraj-kumar-shah-2904052b0')}" target="_blank" class="btn btn-ghost btn-sm">
               <i class="fab fa-linkedin-in"></i> LinkedIn
             </a>
           </div>

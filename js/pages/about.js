@@ -57,7 +57,7 @@ export async function renderAbout(el, summary) {
             <div class="info-icon"><i class="fab fa-linkedin"></i></div>
             <div>
               <span class="info-label">LinkedIn</span>
-              <a class="info-val" href="${escHtml(about?.linkedin_url || '#')}" target="_blank">www.linkedin.com/in/suraj-kumar-shah-2904052b0</a>
+              <a class="info-val" href="${escHtml(about?.linkedin_url || '#')}" target="_blank">https://www.linkedin.com/in/suraj-kumar-shah-2904052b0/</a>
             </div>
           </div>
           <div class="info-row">

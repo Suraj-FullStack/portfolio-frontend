@@ -226,6 +226,7 @@ function buildProjectCards(projects) {
 
 function defaultProjects() {
   return [
+    {emoji:'💻', cat:'web',  title:'Elevate-workforce-job-portal', desc:'Elevate Workforce Solutions is a full-stack job portal for Nepal, connecting talented professionals with top companies.', stack:'Node.js, Express.js, PostgreSQL, HTML, Javascript, Tailwind CSS', featured:true },
     { emoji:'📸', cat:'Web Dev',   title:'Boundless Moments Photography', desc:'Responsive photography portfolio with SEO & accessibility.', stack:'HTML5, CSS3, JavaScript' },
     { emoji:'🏨', cat:'Database',  title:'Hotel Room Reservation System', desc:'Desktop app for Hidden Paradise Hotel with PostgreSQL backend.', stack:'Python, Tkinter, PostgreSQL' },
     { emoji:'🌐', cat:'Backend',   title:'Portfolio REST API + Frontend', desc:'Django REST API + Vanilla JS SPA with separated architecture.', stack:'Django, DRF, JavaScript' },
